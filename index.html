@@ -15,38 +15,33 @@
         a:hover { color:#000000; text-decoration:none }
         a:active { color:#000000; text-decoration:none }
         -->
-      </style>   
+      </style>
+   
       <title>F)FIELD</title>
      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 
-      <script type="text/javascript">
-        $(document).ready(function(){
-        $("#header").load("html/header.html");
-        });
-      </script>
-
-
-      <script type="text/javascript">
-        $(document).ready(function(){
-        $("#footer").load("html/footer.html");
-        });
-    </script>
-
-    <script>
-       $(".box").hover(
-        function(){
-
-         $('.icon').css('display','none');
-           $('.span-text').css('display','block');
-          }, 
+      <script>
+         $(function(){
+　        
+            $("#header").load("html/header.html");
+            $("#footer").load("html/footer.html");
          
-         function(){
-         $('.icon').css('display','block');
-           $('.span-text').css('display','none');
-         }
-        );
+            $(".green").hover(
+              function(){
+              $('.icon').css('display','none');
+              $('.span-text').css('display','block');
+              $('.span-text p').css('font-size','10px');
+            },
+
+              function(){
+              $('.icon').css('display','block');
+              $('.span-text').css('display','none');
+            });
+         });
+           
+        
 
     </script>
 
@@ -63,7 +58,8 @@
         <div class="main-contents">
           <article class="main-article">
             <div class="box yellow">
-              <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+              <div class="icon"><i class="fa fa-desktop fa-3x" aria-hidden="true"></i></div>
+              <div class="span-text"><p>一時的なイベントや<br>建物の整備などで終わることのない<br>地域の活性化をします。</p></div>
             </div>
             <section class="main-section">
               <h2 class="yellow-font">IT</h2>
@@ -73,7 +69,7 @@
           <article class="main-article">
             <div class="box green">
               <div class="icon"><i class="fa fa-home fa-4x" aria-hidden="true"></i></div>
-              <div class="span-text">aaaaaaaaaaaaaaaaaa</div>
+              <div class="span-text"><p>一時的なイベントや<br>建物の整備などで終わることのない<br>地域の活性化をします。</p></div>
              </div>
             <section class="main-section">
               <h2 class="green-font">まちづくり</h2>
@@ -82,7 +78,9 @@
           </article>
           <article class="main-article">
             <div class="box red">
-              <i class="fa fa-globe fa-3x" aria-hidden="true"></i></div>
+              <div class="icon"><i class="fa fa-globe fa-3x" aria-hidden="true"></i></div>
+              <div class="span-text"><p>一時的なイベントや<br>建物の整備などで終わることのない<br>地域の活性化をします。</p></div>
+            </div>
             <section class="main-section">
               <h2 class="red-font">グローバル</h2>
               <p>世界とつながる事業</p>

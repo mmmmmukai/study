@@ -111,9 +111,6 @@ main {
     margin-left: 0;
 }
 }
-.span-text {
-  display: none;
-}
 .yellow-font{
   color: #E5BC00;
 }
@@ -363,4 +360,13 @@ filter: gray;
    .infomation h4 {
     letter-spacing: 5px;
 }
+}
+.span-text {
+   display: none;  
+   line-height: 1.5;
+   padding-top: 15px;
+   padding-left: 5%;
+   padding-right: 5%;
+   color: #ffffff;
+   font-size: 10px;
 }
