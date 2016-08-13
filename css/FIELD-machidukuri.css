@@ -26,11 +26,25 @@
   float: left;
   line-height: 2;
 }
+@media (max-width: 500px) {
+    .list-section-p1 {
+        width: 100%;
+        font-weight: bold;
+        height: 30px;
+    }
+
+}
 .list-section-p2 {
   width: 70%;
   height: 100%;
   float: left;
   line-height: 2;
+}
+@media (max-width: 500px) {
+    .list-section-p2 {
+        width: 100%;
+    }
+
 }
 .list-img{
   width: 20%;
