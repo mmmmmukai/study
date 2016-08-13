@@ -181,3 +181,12 @@ footer li {
     padding-right: 5%;
   }
 }
+.hp-link {
+  border-bottom: 2px solid #E95B5B;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+}
+.hp-link:hover {
+  background-color: #E95B5B;
+}
