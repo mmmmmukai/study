@@ -80,33 +80,58 @@ main {
 .yellow-font{
   color: #E5BC00;
 }
-.box {
-  width: 40%;
-  height: 45%;
+.box-green {
+  width: 100px;
+  height: 85px;
   margin-left: 30%;
-  line-height: 8;
+  padding-top:15px;
   border-radius: 50%;
   text-align: center;
+  position: relative;
  }
 
-.box:hover {
- transform: scale(3);
-  -webkit-transform: scale(3);
-  -moz-transform: scale(3);
-  -o-transform: scale(3);
-  -ms-transform: scale(3);
- transition: all 0.1s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-}
 
 @media(max-width:700px) {
-  .box {
+  .box-green {
     float: left;
-    width: 30%;
-    height: 80%;
+    margin-right: 10%;
+    margin-left: 0;
+}
+}
+
+.box-red {
+  width: 100px;
+  height: 75px;
+  margin-left: 30%;
+  padding-top: 25px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+ }
+
+
+@media(max-width:700px) {
+  .box-red {
+    float: left;
+    margin-right: 10%;
+    margin-left: 0;
+}
+}
+
+.box-yellow {
+  width: 100px;
+  height: 75px;
+  margin-left: 30%;
+  padding-top: 25px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+ }
+
+
+@media(max-width:700px) {
+  .box-yellow {
+    float: left;
     margin-right: 10%;
     margin-left: 0;
 }
@@ -139,6 +164,7 @@ main {
   .main-section {
     width: 60%;
     text-align: center;
+
   }
 }
 .main-section p{
@@ -361,23 +387,49 @@ filter: gray;
     letter-spacing: 5px;
 }
 }
-.span-text {
-   width: 100%;
-   height: auto;
+.hover-green {
+   width: 170px;
+   height: 190px;
+   border-radius: 50%;
    float: left;
    display: none;  
-<<<<<<< HEAD
-   line-height: 2;
-   color: red;
-   font-size: 20px;
-   font-weight: bold;
-   z-index: 10;
-=======
    line-height: 1.5;
-   padding-top: 15px;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-top: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
    color: #ffffff;
-   font-size: 10px !important;
->>>>>>> ae3e28d800cff20578fbc3827c9c677c75fd3fe9
+   font-size: 16px;
+   letter-spacing: 5px;
+   position: absolute;
+}
+
+.hover-red {
+   width: 170px;
+   height: 190px;
+   border-radius: 50%;
+   float: left;
+   display: none;  
+   line-height: 1.5;
+   padding-top: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
+   color: #ffffff;
+   font-size: 16px;
+   letter-spacing: 5px;
+   position: absolute;
+}
+.hover-yellow {
+   width: 170px;
+   height: 190px;
+   border-radius: 50%;
+   float: left;
+   display: none;  
+   line-height: 1.5;
+   padding-top: 60px;
+   padding-left: 40px;
+   padding-right: 40px;
+   color: #ffffff;
+   font-size: 16px;
+   letter-spacing: 5px;
+   position: absolute;
 }
