@@ -368,5 +368,5 @@ filter: gray;
    padding-left: 5%;
    padding-right: 5%;
    color: #ffffff;
-   font-size: 10px;
+   font-size: 10px !important;
 }
