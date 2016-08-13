@@ -162,7 +162,7 @@ main {
 }
 @media(max-width:700px){
   .main-section {
-    width: 60%;
+    width: 50%;
     text-align: center;
 
   }
