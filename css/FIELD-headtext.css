@@ -7,6 +7,11 @@
   font-size: 12px;
   border-bottom: 1px solid #eeeeee;
 }
+@media(max-width:400px){
+  .head-text {
+   height: 60px;
+}
+}
 
 .head-text1-li {
   height: 10%;
@@ -28,3 +33,12 @@
   padding-top: 50px;
   letter-spacing: 10px;
 }
+@media(max-width:400px){
+ .head-text2 {
+   height: 70px;
+   font-size: 16px;
+   padding-top: 20px;
+   height: auto;
+   letter-spacing: 3px;
+   }
+ }

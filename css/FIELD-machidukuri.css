@@ -45,8 +45,14 @@
     .list-section-p2 {
         width: 100%;
     }
-
 }
+@media(max-width:400px){
+ .list-section-p2 {
+  font-size: 12px;      
+}
+}
+
+
 .list-img{
   width: 20%;
   height: 100px;
