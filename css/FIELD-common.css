@@ -73,11 +73,20 @@ transform: scale(1.3);
   margin-left: 5%;
 }
 }
-
+@media(max-width:400px) {
+   .nav li{
+  font-size: 10px;
+}
+}
 footer {
   width: 100%;
   height: 550px;
   float: left;
+}
+@media(max-width:400px){
+footer {
+   height: 350px;
+ }
 }
 .footer-top {
   width: 100%;
@@ -90,7 +99,11 @@ footer ul {
   float: left;
   padding-top: 70px;
   z-index: 5;
-
+}
+@media(max-width:400px){
+ footer ul{
+ height: 200px;
+}
 }
 footer li {
   width: 100%;

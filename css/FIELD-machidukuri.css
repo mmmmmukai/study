@@ -35,10 +35,11 @@
 
 }
 .list-section-p2 {
-  width: 70%;
+  width: 65%;
   height: 100%;
   float: left;
   line-height: 2;
+  margin-right: 5%;
 }
 @media (max-width: 500px) {
     .list-section-p2 {
