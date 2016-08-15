@@ -35,17 +35,24 @@
 
 }
 .list-section-p2 {
-  width: 70%;
+  width: 65%;
   height: 100%;
   float: left;
   line-height: 2;
+  margin-right: 5%;
 }
 @media (max-width: 500px) {
     .list-section-p2 {
         width: 100%;
     }
-
 }
+@media(max-width:400px){
+ .list-section-p2 {
+  font-size: 12px;      
+}
+}
+
+
 .list-img{
   width: 20%;
   height: 100px;
