@@ -8,6 +8,9 @@ li {
   list-style: none;
 }
 
+a {
+  color: #000000;
+}
 header {
   width: 100%;
   height: 150px;
@@ -228,4 +231,38 @@ video#bgvid {
 @media screen and (max-device-width: 800px) {
   html { background: url(/video/nooneshallsleep.jpg) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
+}
+#sp_mode {
+    display:none;
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+}
+#pc_mode{
+    display:none;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  position:absolute;
+  top:0;
+}
+
+.catch {
+   margin:10%;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size:5em;
+   text-align: center;
+   line-height: 2em;
+}
+@media(max-width:800px) {
+.catch {
+   font-size:3em;
+}
 }

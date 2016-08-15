@@ -1,60 +1,166 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0038)file:///Users/mukai/Desktop/FIELD.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       
       <link rel="stylesheet" href="./css/reset.css">
       <link rel="stylesheet" href="./css/cf.css">
       <link rel="stylesheet" href="./css/FIELD-common.css">
-      <link rel="stylesheet" href="./css/FIELD-headtext.css">
-      <link rel="stylesheet" href="./css/FIELD-detail.css">
+     <link rel="stylesheet" href="./css/FIELD-detail.css">
+      <link rel="stylesheet" href="./css/FIELD-top.css">
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
-
-
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
-
-      <title>FIELD-都内ITスクール</title>   
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <style type="text/css">
+        <!--
+        a:link { color:#000000; text-decoration:none }
+        a:visited { color:#000000; text-decoration:none }
+        a:hover { color:#000000; text-decoration:none }
+        a:active { color:#000000; text-decoration:none }
+        -->
+      </style>
    
-    <script type="text/javascript">
-      $(document).ready(function(){
-      $("#header").load("html/header.html");
-      });
+      <title>F)FIELD</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script>
+         $(function(){
+            $("#header").load("html/header.html");
+            $("#footer").load("html/footer.html");
+
+            $(".green").hover(
+              function(){
+              $('.box-green').css('display','none');
+              $('.hover-green').css('display','block');
+              },
+
+              function(){
+              $('.box-green').css('display','block');
+              $('.hover-green').css('display','none');
+            });
+            
+            
+            $(".red").hover(
+              function(){
+              $('.box-red').css('display','none');
+              $('.hover-red').css('display','block');
+              },
+
+              function(){
+              $('.box-red').css('display','block');
+              $('.hover-red').css('display','none');
+            });
+
+            $(".yellow").hover(
+              function(){
+              $('.box-yellow').css('display','none');
+              $('.hover-yellow').css('display','block');
+              },
+
+              function(){
+              $('.box-yellow').css('display','block');
+              $('.hover-yellow').css('display','none');
+            });
+
+             var screenWidth = $(window).width();
+             var defo = 500;
+             if (screenWidth <= defo) {
+                 $('#sp_mode').css({
+                    display: 'block'
+                 });
+                 $('#pc_mode').css({
+                    display: 'none'
+                 });
+              } else {
+                 $('#sp_mode').css({
+                    display: 'none'
+                 });
+                 $('#pc_mode').css({
+                    display: 'block'
+                 });
+              }
+         });
+
     </script>
-
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-      $("#footer").load("html/footer.html");
-      });
-    </script>
-
-    </head>
-     
+<!--&#91;if lt IE 9&#93;>
+<script>
+  document.createElement('video');
+</script>
+<!&#91;endif&#93;-->
   
- <body>
-      
+<style>
+  video { display: block; }
+</style>
+    </head>
+    <body> 
       <header id="header">
-      </header>   
+      </header>  
+     <main>
+        <div id="pc_mode">
+         <video  autoplay loop  poster="/video/nooneshallsleep.jpg" width="100%">
+         <source src="/video/nooneshallsleep.mp4">
+         <source src="/video/nooneshallsleep.ogv">
+         <source src="/video/nooneshallsleep.webm">
+         <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+        </video>
+	 <div class="overlay"><div class="catch">NO ONE<br>SHALL SLEEP<br>= START WEB =</div></div>
+        </div>
+        <div class="main-top-img" id="sp_mode">
+          <img src="./images/main-top-img.jpg">
+        </div>
+        <div class="main-contents">
+          <article class="main-article">
+            <div class="hover-yellow yellow">
+                <p>簡単なHPは<br>ひとりで作れるようになりましょう<br></p>
+            </div>
+            <div class="box-yellow yellow">
+              <div class="icon">
+                <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <section class="main-section">
+              <h2 class="yellow-font">HTML5+CSS3</h2>
+              <p>HP作成の基礎</p>
+            </section>
+          </article>
 
+          <article class="main-article">  
+              <div class="hover-green green">
+                <p>システムを自分で作成できるようになります。</p>
+              </div>
+              <div class="box-green green">
+                <div class="icon">
+                  <i class="fa fa-home fa-4x" aria-hidden="true"></i>
+                </div>
+              </div>
+              <section class="main-section">
+                <h2 class="green-font">PHP</h2>
+                <p>フレームワークを使って開発</p>
+              </section>
+          </article>
+
+          <article class="main-article">
+            <div class="hover-red red">
+                <p>作ってからも自分で運用できるようになりましょう</p>
+              </div>
+            <div class="box-red red">
+              <div class="icon">
+                <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <section class="main-section">
+              <h2 class="red-font">企画設計運用</h2>
+              <p>企画や設計、マーケなども身につきます</p>
+            </section>
+          </article>
+       </div>
+     </main>
      <div class="wapper">
-       <div class="head-text">
-          <ul>
-           <li class="head-text1-li">TOP</li>
-           <li class="angle-bracket">></li>
-           <li class="head-text1-li">ITスクール</li>
-          </ul>
-          <div class="head-text2">
-          <p>ITスクール</p> 
-         </div>
-       </div> 
+       <div class="head-text"> 
         <div class="intro-contents">
-         <p class="intro-contents-text1">ITスクールやってます<br>雰囲気だけではなく実務能力を</p>
+         <p class="intro-contents-text1">会員制 市ヶ谷のITスクールで<br>雰囲気だけではなく実務能力を</p>
          <p class="intro-contents-text2">
            予備知識はいりません。linax,vim git-flow aws ec2<br>mysqi js php codeigniter capistrano apache html5<br>css3 DB設計 ER　等が全て身につきます。<br>
          </p>
        </div>  
+    </div>
     </div>
     <div class="main-img">
       <div class="vanish-image1">
@@ -72,7 +178,7 @@
             <img src="./images/pc2.jpg">
           </div>
           <section class="contents-section">
-            <h3>雰囲気だけで終わるセミナーはだめでしょ！</h3>
+            <h3>雰囲気だけで終わるセミナーではだめ。</h3>
             <p>思ったものを何でも作れるようになる本当の力がつくITスクールが見つかりません。私達がそれを実現します。</p>
           </section>
         </article>
@@ -90,16 +196,16 @@
             <img src="./images/clock.jpg">
           </div>
           <section class="contents-section">
-            <h3>開発だけでなく企画や運用の考えも</h3>
+            <h3>企画や運用の考えも</h3>
             <p>作るだけではサービスは忘れられてしまいます。運用方法まで学びましょう。マーケやSEO等トータルで考えれるようになってください。自分でビジネスができる人材を欲しがる企業はたくさんあります。</p>
           </section>
         </article>
       </div>
     </div>
 
-      <footer id="footer">
-      </footer>   
 
-    
-    </body>
+     <footer id="footer">
+     </footer>
+   
+  </body>
 </html>
