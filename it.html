@@ -61,7 +61,15 @@
          });
 
     </script>
-
+<!--&#91;if lt IE 9&#93;>
+<script>
+  document.createElement('video');
+</script>
+<!&#91;endif&#93;-->
+  
+<style>
+  video { display: block; }
+</style>
     </head>
     <body>
      
@@ -75,6 +83,9 @@
         <source src="/video/nooneshallsleep.mp4" type="video/mp4">
         </video>
         </div>
+<div class="overlay">
+  コンテンツ
+</div>
         <div class="main-contents">
 
           <article class="main-article">
